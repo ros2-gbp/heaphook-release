@@ -1,0 +1,12 @@
+Source: ros-jazzy-heaphook
+Section: misc
+Priority: optional
+Maintainer: sykwer <sykwer@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-jazzy-ament-cmake, ros-jazzy-ament-lint-auto <!nocheck>, ros-jazzy-ament-lint-common <!nocheck>, ros-jazzy-tlsf, ros-jazzy-ros-workspace
+Homepage: 
+Standards-Version: 3.9.2
+
+Package: ros-jazzy-heaphook
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-jazzy-tlsf, ros-jazzy-ros-workspace
+Description: Replace all the dynamic heap allocation functions by LD_PRELOAD
